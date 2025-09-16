@@ -17,13 +17,17 @@ body {
 .sobremi {
     margin-top: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #foto-tiktok {
+    margin-top: 0px;
     margin: 10px;
     max-width: 200px;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
 .sobremi-texto {
@@ -31,14 +35,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    max-width: 60%;
+    padding: .5rem 1rem 0 1rem;
 }
 
 h1 {
-    padding: 0 2rem;
+    width: 100%;
+    text-align: center;
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 8vw;
+    white-space: nowrap;
     background: linear-gradient(135deg, #F9C6D3, #D8B4FE);
 }
 
