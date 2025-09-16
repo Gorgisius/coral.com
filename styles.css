@@ -1,12 +1,17 @@
 body {
     background: linear-gradient(120deg, #A7D8F8, #F9C6D3);
     font-family: lexend;
+    /* padding-bottom: 2rem; */
+}
+.gif {
+    height: 70px;
+    background: url('./images/gatoslineales.gif') repeat-x center;
+    width: 90%;
 }
 
 .contenido {
     color: #1f252e;
     width: 75%;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -15,7 +20,7 @@ body {
 }
 
 .sobremi {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +32,6 @@ body {
     margin: 10px;
     max-width: 200px;
     border-radius: 10px;
-    border: 1px solid black;
 }
 
 .sobremi-texto {
@@ -50,6 +54,10 @@ h1 {
 h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    background: linear-gradient(135deg, #F9C6D3, #D8B4FE);
+    padding: 0 .5rem;
+    border-radius: 5px;
+    text-align: center;
 }
 
 p {
@@ -57,13 +65,65 @@ p {
     text-align: center;
     height: auto;
 }
+li {
+    margin-left: 1rem;
+}
 
+#gustos {
+    margin-bottom: .5rem;
+}
+form {
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    align-self: center;
+    margin-top: 1rem;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* Espacio entre el input y el label */
+    margin-bottom: 0.5rem; /* Espacio entre los grupos */
+}
 
+input[type="radio"] {
+    margin: 0; /* Elimina márgenes predeterminados */
+}
 
-
-
-
-
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    gap: 1rem;
+}
+.icono{
+    width: 40px;
+    height: 40px;
+}
+footer{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+input{
+    text-align: center;
+}
+textarea{
+    text-align: center;
+}
+.gradient-border-clip {
+  border: 4px solid transparent; /* Transparent border to allow the background to show through */
+  border-radius: 15px; /* Example border-radius */
+  background: 
+    linear-gradient(white, white) padding-box, /* Background for the content area */
+    linear-gradient(to right, #E75480, #7C3AED) border-box; /* Gradient for the border area */
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box; /* Ensures correct positioning */
+}
 
 
 /* Box sizing rules */

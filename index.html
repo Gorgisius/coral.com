@@ -12,34 +12,81 @@
     <div class="contenido">
         <h1>¡Hola, Soy Coral!</h1>
         <div class="sobremi">
-            <img id="foto-tiktok" src="./images/coral_beautiful.png" alt="Yo bien bellaka">
+            <img id="foto-tiktok" src="./images/coral_beautiful.png" alt="Yo bien bellaka" class="gradient-border-clip">
             <div class="sobremi-texto">
                 <h3>Sobre mi</h3>
-                <p>Me gustan los gatos y tengo un hermano mayor. Me gusta jugar roblox y también llevo tejiendo alrededor de dos años. Me gusta newjeans y acabo de entrar a la prepa :)</p>
+                <p>Me llamo Coral Rendon, actualmente estoy estudiando la preparatoria. 
+                Paso la mayoría de mi tiempo libre tejiendo o viendo k-pop. 
+                Soy tranquila y un poco reservada. Si estas leyendo esto es porque quiero que me conozcas.</p>
             </div>
         </div>
-        <div style="
-            height: 70px;
-            background: url('./images/gatoslineales.gif') repeat-x center;
-            width: 90%;
-        "></div>
+        <div class="gif"></div>
         <div class="gustos">
             <div class="gustos-texto">
-                <h3>Cosas que me gustan</h3>
-                <br>
+                <h3 id="gustos">Cosas que me gustan</h3>
                 <ul>
                     <li>Tejer</li>
                     <li>New Jeans</li>
                     <li>Los gatos</li>
                     <li>La comida italiana</li>
+                    <li>Cocinar</li>
+                    <li>Ver series</li>
+                    <li>Jugar Roblox</li>
                 </ul>
             </div>
         </div>
-        <div style="
-            height: 70px;
-            background: url('./images/gatoslineales.gif') repeat-x center;
-            width: 90%;
-        "></div>
+        <div class="gif"></div>
+        <form>
+            <h3>Cuestionario</h3>
+            <label for="nombre" class="label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad" class="label">Edad</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <label for="artista" class="label">Artista favorito</label>
+            <input type="text" id="artista" name="artista" required>
+
+            <p style="margin-bottom: .5rem;">Juegas Roblox?</p>
+            <div class="radio-group">
+                <input type="radio" id="si" name="fav_language" value="Si">
+                <label for="si">Si</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="todavia-no" name="fav_language" value="Todavia no">
+                <label for="todavia-no">Todavía no</label>
+            </div>
+
+            <label for="mensaje" class="label" style="margin-bottom: .7rem;">Algo que me quieras decir</label>
+            <textarea id="mensaje" name="mensaje" rows="4" style="resize: none;"></textarea>
+
+            <button type="submit" style="margin-top: 1rem;">Enviar</button>
+        </form>
+        <div class="gif"></div>
+        <div class="redes">
+            <h3>Mis redes sociales</h3>
+            <div style="
+            display: flex; 
+            gap: 1rem; justify-content: 
+            space-between;
+            align-items: center; 
+            margin-top: .5rem;
+            width: 100%;
+            ">
+                <a href="https://www.tiktok.com/@coralrendon" target="_blank">
+                    <img src="./images/tiktok-icon.png" alt="TikTok" class="icono">
+                </a>
+                <a href="https://www.instagram.com/coralrendon/" target="_blank">
+                    <img src="./images/instagram-icon.png" alt="Instagram" class="icono">
+                </a>
+                <a href="https://www.youtube.com/@coralrendon" target="_blank">
+                    <img src="./images/roblox-icon.png" alt="Roblox" class="icono">
+                </a>
+            </div>
+        </div>
+        <footer>
+        <p>&copy; 2025 Coral y Jorge Rendón</p>
+        </footer>
     </div>
 </body>
 </html>
